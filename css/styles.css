@@ -23,8 +23,8 @@
     font-weight: bold;
     border-style: solid;
     border-width: thick;
+    border-color: black;
     text-align: center;
-    line-height: 52px;
     cursor: pointer;
 }
 #listen_spotify:hover {
@@ -37,7 +37,7 @@
     height: 50px;
     border-radius: 25px;
     background-color: white;
-    color: black;
+    color: gray;
     font-family: 'Russo One', sans-serif;
     font-size: auto;
     font-weight: bold;
@@ -45,6 +45,5 @@
     border-style: solid;
     border-width: thick;
     text-align: center;
-    line-height: 50px;
     cursor: pointer;
 }
