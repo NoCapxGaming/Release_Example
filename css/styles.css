@@ -47,3 +47,57 @@
     text-align: center;
     cursor: pointer;
 }
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 95%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: inline;
+  text-align: center;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 40px;
+  border-width: thick;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 30px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+  color: white;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.spotify {
+  background: #1DB954;
+  color: black;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
