@@ -7,61 +7,38 @@
     border: 0;
 }
 
-#listen_spotify {
+.track-list {
 
-    position: fixed;
+    margin: 0;
+    position: absolute;
+    bottom: 45px;
     left: 50%;
-    bottom: 10px;
-    margin-left: -25%;
-    width: 50%;
-    height: 50px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     border-radius: 25px;
-    background-color: green;
-    color: black;
     font-family: 'Russo One', sans-serif;
     font-size: 36px;
     font-weight: bold;
-    border-style: solid;
-    border-width: thick;
-    border-color: black;
     text-align: center;
     cursor: pointer;
 }
-#listen_spotify:hover {
 
-    position: fixed;
-    left: 50%;
-    bottom: 10px;
-    margin-left: -25%;
-    width: 50%;
-    height: 50px;
-    border-radius: 25px;
-    background-color: white;
-    color: gray;
-    font-family: 'Russo One', sans-serif;
-    font-size: auto;
-    font-weight: bold;
-    border-color: gray;
-    border-style: solid;
-    border-width: thick;
-    text-align: center;
-    cursor: pointer;
-}
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
-  position: fixed;
-  top: 95%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* Style the icon bar links */
 .icon-bar a {
   display: inline;
   text-align: center;
-  padding: 10px;
+  padding: 8px;
   border-style: solid;
   border-color: black;
   border-radius: 50%;
@@ -85,7 +62,6 @@
 .twitter {
   background: #55ACEE;
   color: white;
-  padding-top: 1px;
 }
 
 .spotify {
