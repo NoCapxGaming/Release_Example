@@ -64,7 +64,7 @@
   padding: 10px;
   border-style: solid;
   border-color: black;
-  border-radius: 40px;
+  border-radius: 50%;
   border-width: thick;
   transition: all 0.3s ease;
   color: black;
@@ -85,6 +85,7 @@
 .twitter {
   background: #55ACEE;
   color: white;
+  padding-top: 1px;
 }
 
 .spotify {
