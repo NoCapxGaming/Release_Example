@@ -1,0 +1,50 @@
+#my_iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#listen_spotify {
+
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -25%;
+    width: 50%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: green;
+    color: black;
+    font-family: 'Russo One', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: thick;
+    text-align: center;
+    line-height: 52px;
+    cursor: pointer;
+}
+#listen_spotify:hover {
+
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -25%;
+    width: 50%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    font-family: 'Russo One', sans-serif;
+    font-size: auto;
+    font-weight: bold;
+    border-color: gray;
+    border-style: solid;
+    border-width: thick;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}

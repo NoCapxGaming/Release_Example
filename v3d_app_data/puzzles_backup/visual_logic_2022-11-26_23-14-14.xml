@@ -1,0 +1,58 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="215.46400619453107" scrolly="0" scale="0.6935539619171465"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="-9.542526245117188" scrolly="31.997837960687832" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="h?@);8FCR8(pCA;?-v^." x="250" y="130">
+      <value name="IF0">
+        <block type="isObjectVisible" id="+pBsnLF/bNE,*.Cq]~zW">
+          <value name="VALUE">
+            <shadow type="objectList" id="=5JfH|XFhH=E]oCtB_-$">
+              <field name="FIELDNAME">Diamond</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="zoomCameraToObject" id="7*Fp-,e_e`..igBR#A~L">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+          <value name="OBJECT">
+            <shadow type="objectList" id=".vxb#|Hlm/4w+%bY2;8S">
+              <field name="FIELDNAME">FocalPoint</field>
+            </shadow>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="w]1D0ra4!B2irA,p|6+*">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="autoRotateCamera" id="S67NU-Z:auzNV,y9R/_X">
+              <field name="ON_OFF">ON</field>
+              <value name="SPEED">
+                <shadow type="math_number" id="}Tu;vqQ/o[uB{a0Pv.Wc">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setCameraParam" id="ntM?^c{F50NCV)E6U^L{">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" type="CLIP_END"></mutation>
+                  <field name="TYPE">CLIP_END</field>
+                  <value name="CLIP_END">
+                    <shadow type="math_number" id="CGbQ$j(=RK%udf@cK1OX">
+                      <field name="NUM">200</field>
+                    </shadow>
+                  </value>
+                  <value name="OBJECT">
+                    <shadow type="objectList" id="]Pl[^[W3{y[6`uNaMbL)">
+                      <field name="FIELDNAME">Camera</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="28" viewport-w="614.4" viewport-h="373" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

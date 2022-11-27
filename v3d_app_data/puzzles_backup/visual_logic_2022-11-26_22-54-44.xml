@@ -1,0 +1,145 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="true" scrollx="215.46400619453107" scrolly="217.63190019533613" scale="0.6935539619171465"></tab>
+  <tab name="main" type="MainTab" active="false" scrollx="38.37148880390487" scrolly="-41.71415861400055" scale="0.7966531207743132">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id=",P-$LmmE:A;6;`E;/T=c">color</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="Go,AG$.|g|^D|coN{Pah" inline="false" x="130" y="250">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="true"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="{`J1N$p-M|$n1rw(Hb{M">
+          <field name="FIELDNAME">Headphones</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="zoomCameraToObject" id="7*Fp-,e_e`..igBR#A~L">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+          <value name="OBJECT">
+            <shadow type="objectList" id=".vxb#|Hlm/4w+%bY2;8S">
+              <field name="FIELDNAME">Headphones</field>
+            </shadow>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="w]1D0ra4!B2irA,p|6+*">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="autoRotateCamera" id="S67NU-Z:auzNV,y9R/_X">
+              <field name="ON_OFF">ON</field>
+              <value name="SPEED">
+                <shadow type="math_number" id="}Tu;vqQ/o[uB{a0Pv.Wc">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setCameraParam" id="ntM?^c{F50NCV)E6U^L{">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" type="FIELD_OF_VIEW"></mutation>
+                  <field name="TYPE">FIELD_OF_VIEW</field>
+                  <value name="FIELD_OF_VIEW">
+                    <shadow type="math_number" id="~R2+0n+c.eh)qRLR1#Hg">
+                      <field name="NUM">50</field>
+                    </shadow>
+                  </value>
+                  <value name="OBJECT">
+                    <shadow type="objectList" id="]Pl[^[W3{y[6`uNaMbL)">
+                      <field name="FIELDNAME">Camera</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="IF_MISSED_DO">
+        <block type="zoomCameraToObject" id="zuF,_!E!^ciC)H0djVvM">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+          <value name="OBJECT">
+            <shadow type="objectList" id="-%n/dAYoX{;jt{euM6Hl">
+              <field name="FIELDNAME">Headphones</field>
+            </shadow>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="9jd[wm!@9Q,hH0KN+83Y">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="autoRotateCamera" id="aBZq1#cGoy_H@/5lSY=c">
+              <field name="ON_OFF">ON</field>
+              <value name="SPEED">
+                <shadow type="math_number" id="VEQBiN[2E/|tz;:z/I7*">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setCameraParam" id="yj{E:8w=UoQ^s)A;b(wO">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" type="FIELD_OF_VIEW"></mutation>
+                  <field name="TYPE">FIELD_OF_VIEW</field>
+                  <value name="FIELD_OF_VIEW">
+                    <shadow type="math_number" id="NHiW}O](L(r$f5E|wTno">
+                      <field name="NUM">50</field>
+                    </shadow>
+                  </value>
+                  <value name="OBJECT">
+                    <shadow type="objectList" id="-NrdD0:RtZ=5ep^6[@vJ">
+                      <field name="FIELDNAME">Camera</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="}Rcv[(SaWxM*`Cc+4+wf" inline="false" x="90" y="550">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="o2fSAZzm5vFY_[OL_0=E">
+          <field name="FIELDNAME">Diamond</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="zoomCameraToObject" id="]/ynSfk6lmS,*edp2?_H">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+          <value name="OBJECT">
+            <shadow type="objectList" id="G,FTzKE]9t|FD@u;s=0M">
+              <field name="FIELDNAME">Headphones</field>
+            </shadow>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="(64F`k-ETa#|j%@ftbbK">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="autoRotateCamera" id="*IYUJb1E~A099`HR-v==">
+              <field name="ON_OFF">ON</field>
+              <value name="SPEED">
+                <shadow type="math_number" id="7I=xmaALkRo(uYrN}0G{">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="lm^~y%M`-AGriD.waxzc" x="750" y="590">
+      <field name="VAR" id=",P-$LmmE:A;6;`E;/T=c">color</field>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="28" viewport-w="614.4" viewport-h="373" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
