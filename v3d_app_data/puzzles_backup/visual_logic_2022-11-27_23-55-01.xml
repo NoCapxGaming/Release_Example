@@ -1,0 +1,123 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="215.46400619453107" scrolly="0" scale="0.6935539619171465"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="15.87002239033609" scrolly="39.133194552856565" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="{brJJ]Y%BE0;aV%PR5wh">counter</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="h?@);8FCR8(pCA;?-v^." x="250" y="50">
+      <value name="IF0">
+        <block type="isObjectVisible" id="+pBsnLF/bNE,*.Cq]~zW">
+          <value name="VALUE">
+            <shadow type="objectList" id="=5JfH|XFhH=E]oCtB_-$">
+              <field name="FIELDNAME">Diamond</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="autoRotateCamera" id="S67NU-Z:auzNV,y9R/_X">
+          <field name="ON_OFF">ON</field>
+          <value name="SPEED">
+            <shadow type="math_number" id="}Tu;vqQ/o[uB{a0Pv.Wc">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setCameraParam" id="ntM?^c{F50NCV)E6U^L{">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" type="FIELD_OF_VIEW"></mutation>
+              <field name="TYPE">FIELD_OF_VIEW</field>
+              <value name="FIELD_OF_VIEW">
+                <shadow type="math_number" id="E|aTN1oT=Vn@HC@W{g(q">
+                  <field name="NUM">50</field>
+                </shadow>
+              </value>
+              <value name="OBJECT">
+                <shadow type="objectList" id="]Pl[^[W3{y[6`uNaMbL)">
+                  <field name="FIELDNAME">Camera</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_whileUntil" id="S/1tV-wc(|hsUZ=ZaL~}" x="50" y="330">
+      <field name="MODE">WHILE</field>
+      <value name="BOOL">
+        <block type="logic_compare" id="3W]KSj=k6GEHfGUIQE=~">
+          <field name="OP">LT</field>
+          <value name="A">
+            <block type="variables_get" id="4%Fp_4gp^AYwdzWbRcj0">
+              <field name="VAR" id="{brJJ]Y%BE0;aV%PR5wh">counter</field>
+            </block>
+          </value>
+          <value name="B">
+            <block type="math_number" id="G-ghi:eTa@N86QohWnoF">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="*v,]F_)bax9oO*`HoiBX">
+          <field name="VAR" id="{brJJ]Y%BE0;aV%PR5wh">counter</field>
+          <value name="VALUE">
+            <block type="math_arithmetic" id="r*#sGyhr4eVw6u]~IH#V">
+              <field name="OP">ADD</field>
+              <value name="A">
+                <shadow type="math_number" id="/]jn4zU7@cI-F;#x~|Y`">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="math_number" id="gp@5Z_Z?)-^aV~+F]7cP">
+                  <field name="NUM">0</field>
+                </block>
+              </value>
+              <value name="B">
+                <shadow type="math_number" id="Z3fM}.0^ViWr;|XM#qKb">
+                  <field name="NUM">0.1</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="setMaterialValue" id="tNJZP6a)gA@/^iNTc{ZT">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+              <field name="MAT_VAL_NAME">Value</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="TcT3XLyjYIpdn(?VLr.;">
+                  <field name="FIELDNAME">InnerBallTexture</field>
+                </shadow>
+              </value>
+              <value name="VALUE">
+                <shadow type="math_number" id="]@QUL}*{Dzf6J4U(L!Ut">
+                  <field name="NUM">0.5</field>
+                </shadow>
+                <block type="variables_get" id="NQA^g@F_OMPio{yan3UM">
+                  <field name="VAR" id="{brJJ]Y%BE0;aV%PR5wh">counter</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_get" id="2H+(zq~Hd^,8`J!Z!!$7" x="790" y="450">
+      <field name="VAR" id="{brJJ]Y%BE0;aV%PR5wh">counter</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setMaterialValue" id="=*0,~9BRQ``PQ^rbJo}," x="250" y="510">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+      <field name="MAT_VAL_NAME">Value</field>
+      <value name="MATERIAL">
+        <shadow type="materialList" id="_I6q=QyF-C=A21hqMEkQ">
+          <field name="FIELDNAME">InnerBallTexture</field>
+        </shadow>
+      </value>
+      <value name="VALUE">
+        <shadow type="math_number" id="]@QUL}*{Dzf6J4U(L!Ut">
+          <field name="NUM">0.1</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="28" viewport-w="614.4" viewport-h="373" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

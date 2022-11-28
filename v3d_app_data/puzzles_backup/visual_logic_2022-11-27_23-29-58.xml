@@ -1,0 +1,125 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="215.46400619453107" scrolly="0" scale="0.6935539619171465"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="9.470034501999976" scrolly="24.73316839833808" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="EHc2`9ui,TzYVs]AN*L%">counter</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="h?@);8FCR8(pCA;?-v^." x="250" y="50">
+      <value name="IF0">
+        <block type="isObjectVisible" id="+pBsnLF/bNE,*.Cq]~zW">
+          <value name="VALUE">
+            <shadow type="objectList" id="=5JfH|XFhH=E]oCtB_-$">
+              <field name="FIELDNAME">Diamond</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="autoRotateCamera" id="S67NU-Z:auzNV,y9R/_X">
+          <field name="ON_OFF">ON</field>
+          <value name="SPEED">
+            <shadow type="math_number" id="}Tu;vqQ/o[uB{a0Pv.Wc">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setCameraParam" id="ntM?^c{F50NCV)E6U^L{">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" type="FIELD_OF_VIEW"></mutation>
+              <field name="TYPE">FIELD_OF_VIEW</field>
+              <value name="FIELD_OF_VIEW">
+                <shadow type="math_number" id="E|aTN1oT=Vn@HC@W{g(q">
+                  <field name="NUM">50</field>
+                </shadow>
+              </value>
+              <value name="OBJECT">
+                <shadow type="objectList" id="]Pl[^[W3{y[6`uNaMbL)">
+                  <field name="FIELDNAME">Camera</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="vzRo@=v!TZ$Qnzbirbn_" x="70" y="330">
+      <mutation else="1"></mutation>
+      <value name="IF0">
+        <block type="isObjectVisible" id="*:@4@.kXKeXDQEC)p-^*">
+          <value name="VALUE">
+            <shadow type="objectList" id="?%S-%S37W:@@tuM8Xa1,">
+              <field name="FIELDNAME">Diamond</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="controls_whileUntil" id="!ZmbI)v(N6UZazX1NY]y">
+          <field name="MODE">WHILE</field>
+          <value name="BOOL">
+            <block type="logic_compare" id="vb#nC]wVP[_U~k6}zy(;">
+              <field name="OP">NEQ</field>
+              <value name="A">
+                <block type="variables_get" id="F=|@1eePoxVyJ4D7|[+1">
+                  <field name="VAR" id="EHc2`9ui,TzYVs]AN*L%">counter</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="math_number" id="GRyu;fPv}_M^qnG.Byq4">
+                  <field name="NUM">1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="aEs:(g^EITVBhr2S%68$">
+              <field name="VAR" id="EHc2`9ui,TzYVs]AN*L%">counter</field>
+              <value name="VALUE">
+                <block type="math_arithmetic" id="W_fZOrQFsNeLln,rrYP@">
+                  <field name="OP">ADD</field>
+                  <value name="A">
+                    <shadow type="math_number" id="1]2E[Wu{]*C`TAA7+GQ.">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="variables_get" id="Mb{$tB96h1EQurQAK$R(">
+                      <field name="VAR" id="EHc2`9ui,TzYVs]AN*L%">counter</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <shadow type="math_number" id="a+JNo],nwMB8fvUs/g^F">
+                      <field name="NUM">0.1</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="setMaterialValue" id="F[qL}znM?lmq.O[Y6S*d">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" flexvalinput="false"></mutation>
+                  <field name="MAT_VAL_NAME">Value</field>
+                  <value name="MATERIAL">
+                    <shadow type="materialList" id="A!^([.Yea1w|la*Dd]Yz">
+                      <field name="FIELDNAME">InnerBallTexture</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="math_number" id="{tA*/W97v(uAJi-:Ah2Y">
+                      <field name="NUM">0.4</field>
+                    </shadow>
+                    <block type="variables_get" id="[BJb%=^4/rJS$6v.TRJD">
+                      <field name="VAR" id="EHc2`9ui,TzYVs]AN*L%">counter</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+      <statement name="ELSE">
+        <block type="variables_set" id="#x.s%8;oGYi{.n@_DsKN">
+          <field name="VAR" id="EHc2`9ui,TzYVs]AN*L%">counter</field>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="28" viewport-w="614.4" viewport-h="373" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
