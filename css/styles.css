@@ -1,4 +1,4 @@
-#v3d-container {
+#release_app {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -6,17 +6,7 @@
     height: 100%;
     border: 0;
 }
-.v3d-simple-preloader-background {
-  background-color: black;
-}
-.v3d-simple-preloader-bar {
-    background: black;
 
-}
-.v3d-simple-preloader-logo {
-    background-image: url("media/nocap110px.png");
-    background-size: cover;
-}
 .track-list {
     position: fixed;
     overflow: hidden;
@@ -29,8 +19,6 @@
     color: white;
     background-color: black;
     transform: translate(-5%, 0%);
-
-
 }
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
@@ -68,6 +56,24 @@
 
  .icon-bar a {
    font-size: 20px;
+ }
+}
+@media screen and (orientation:landscape) {
+ .track-list {
+     position: fixed;
+     overflow: hidden;
+     bottom: 0px;
+     width: 110%;
+     font-family: 'Russo One', sans-serif;
+     padding-top: 5px;
+     font-size: 36px;
+     font-weight: bold;
+     color: white;
+     background-color: black;
+     transform: translate(-5%, 0%);
+ }
+ .icon-bar {
+   padding-bottom: 10%;
  }
 }
 
