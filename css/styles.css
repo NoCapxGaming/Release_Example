@@ -1,4 +1,4 @@
-#my_iframe {
+#v3d-container {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -6,11 +6,15 @@
     height: 100%;
     border: 0;
 }
+.v3d-simple-preloader-background {
+  background-color: black;
+}
 .v3d-simple-preloader-bar {
-    background: red;
+    background: black;
+
 }
 .v3d-simple-preloader-logo {
-    background-image: url("PATH_TO_YOUR_IMAGE");
+    background-image: url("media/nocap110px.png");
     background-size: cover;
 }
 .track-list {
