@@ -1,6 +1,9 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="215.46400619453107" scrolly="0" scale="0.6935539619171465"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="-238.9438171882976" scrolly="50.684951705818435" scale="0.6935539619171461">
+  <tab name="main" type="MainTab" active="true" scrollx="-807.2367769842858" scrolly="-69.81228131372154" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="NT4GIsX}5OB/r:o?rXnb">x</variable>
+    </variables>
     <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="h?@);8FCR8(pCA;?-v^." x="250" y="50">
       <value name="IF0">
         <block type="isObjectVisible" id="+pBsnLF/bNE,*.Cq]~zW">
@@ -110,6 +113,22 @@
           </value>
         </block>
       </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="math_arithmetic" id="y_v%/6K8x!l2eJk^G;V}" x="850" y="730">
+      <field name="OP">ADD</field>
+      <value name="A">
+        <shadow type="math_number" id="N*hS/R8*T0qT+6*?7x8*">
+          <field name="NUM">2</field>
+        </shadow>
+        <block type="variables_get" id="W7m_@-Bjel@rk^saC.qI">
+          <field name="VAR" id="NT4GIsX}5OB/r:o?rXnb">x</field>
+        </block>
+      </value>
+      <value name="B">
+        <shadow type="math_number" id="*pms0{EK0i}A9x_H#^-F">
+          <field name="NUM">2</field>
+        </shadow>
+      </value>
     </block>
   </tab>
   <editorsettings viewport-x="1217.9875122070312" viewport-y="28" viewport-w="300" viewport-h="381.8" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>

@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="215.46400619453107" scrolly="0" scale="0.6935539619171465"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="-238.9438171882976" scrolly="50.684951705818435" scale="0.6935539619171461">
+  <tab name="main" type="MainTab" active="true" scrollx="-252.5437927742351" scrolly="45.08494560230281" scale="0.6935539619171461">
     <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="h?@);8FCR8(pCA;?-v^." x="250" y="50">
       <value name="IF0">
         <block type="isObjectVisible" id="+pBsnLF/bNE,*.Cq]~zW">
